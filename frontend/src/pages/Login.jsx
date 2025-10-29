@@ -9,6 +9,7 @@ const API = axios.create({
     baseURL: "https://property-listing-booking-platform.onrender.com/api",
 });
 
+
 // Add a request interceptor to include the token in headers
 API.interceptors.request.use(
     (config) => {
@@ -155,7 +156,7 @@ export default function Login() {
                     {/* --- Footer --- */}
                     <p className="text-center text-sm text-slate-400">
                         Don't have an account?{" "}
-                        <Link to="/signup" className="font-semibold text-teal-400 hover:underline">
+                        <Link to="/" className="font-semibold text-teal-400 hover:underline">
                             Sign Up
                         </Link>
                     </p>
