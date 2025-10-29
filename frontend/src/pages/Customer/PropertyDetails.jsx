@@ -24,7 +24,7 @@
 //   // ✅ Proper image URL helper
 //   const getImageUrl = (img) => {
 //     if (!img) return "https://placehold.co/600x400/1e293b/94a3b8?text=Property";
-//     return img.startsWith("http") ? img : `http://localhost:5000/${img}`;
+//     return img.startsWith("http") ? img : `https://property-listing-booking-platform.onrender.com/${img}`;
 //   };
 
 //   const fetchProperty = async () => {
@@ -199,7 +199,7 @@ export default function PropertyDetails() {
   // ✅ Helper for image URLs
   const getImageUrl = (img) => {
     if (!img) return "https://placehold.co/600x400/1e293b/94a3b8?text=Property";
-    return img.startsWith("http") ? img : `http://localhost:5000/${img}`;
+    return img.startsWith("http") ? img : `https://property-listing-booking-platform.onrender.com/${img}`;
   };
 
   // ✅ Fetch property details

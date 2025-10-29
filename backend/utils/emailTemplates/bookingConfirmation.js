@@ -27,7 +27,7 @@ export const bookingConfirmationTemplate = ({
       </div>
 
       <p style="margin-top: 30px; font-size: 13px; color: #6b7280; text-align: center;">
-        © ${new Date().getFullYear()} StayEase — All rights reserved.
+        © ${new Date().getFullYear()} Estately — All rights reserved.
       </p>
     </div>
   </div>

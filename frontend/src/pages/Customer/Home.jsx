@@ -9,7 +9,7 @@ const PropertyImage = ({ images, title }) => {
   if (images?.[0]) {
     src = images[0].startsWith("http")
       ? images[0]                     // Cloudinary or full URL
-      : `http://localhost:5000/${images[0]}`; // local backend path
+      : `https://property-listing-booking-platform.onrender.com/${images[0]}`; // local backend path
   }
   return <img src={src} alt={title} className="h-60 w-full object-cover" />;
 };

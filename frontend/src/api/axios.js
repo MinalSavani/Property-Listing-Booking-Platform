@@ -1,8 +1,12 @@
-// src/api/axios.js
+
 import axios from "axios";
 
+// const API = axios.create({
+//   baseURL: "https://property-listing-booking-platform.onrender.com/api", // your backend
+// });
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // your backend
+  baseURL: import.meta.env.VITE_API_URL, // ✅ this now points to your Render backend
+  withCredentials: true,
 });
 
 // Automatically attach JWT token to every request

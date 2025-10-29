@@ -6,7 +6,7 @@
 
 // // --- Axios Instance with Interceptor ---
 // const API = axios.create({
-//     baseURL: "http://localhost:5000/api",
+//     baseURL: "https://property-listing-booking-platform.onrender.com/api",
 // });
 
 // API.interceptors.request.use(
@@ -241,7 +241,7 @@ import { Search, Plus, LogOut, BarChart } from "lucide-react";
 
 // --- Axios Instance with Interceptor ---
 const API = axios.create({
-    baseURL: "http://localhost:5000/api",
+    baseURL: "https://property-listing-booking-platform.onrender.com/api",
 });
 
 API.interceptors.request.use(
@@ -285,7 +285,7 @@ const PropertyCard = ({ property, onEdit, onDelete }) => {
     const imageUrl = property.images?.[0]
         ? property.images[0].startsWith("http")
             ? property.images[0]
-            : `http://localhost:5000/${property.images[0]}`
+            : `https://property-listing-booking-platform.onrender.com/${property.images[0]}`
         : "https://placehold.co/600x400/1e293b/94a3b8?text=Property";
 
     return (
