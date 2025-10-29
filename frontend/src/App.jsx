@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import MyBookings from "./pages/Customer/MyBookings";
 
 // Pages
 import Signup from "./pages/Signup";
@@ -26,14 +27,15 @@ export default function App() {
 
       <Routes>
         {/* Common Routes */}
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
 
         {/* Customer Routes */}
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/properties/:id" element={<PropertyDetails />} />
         <Route path="/customer/booking-confirmation/:id" element={<BookingConfirmation />} />
+        <Route path="/bookings" element={<MyBookings />} />
 
         {/* Host Routes (Protected) */}
         <Route

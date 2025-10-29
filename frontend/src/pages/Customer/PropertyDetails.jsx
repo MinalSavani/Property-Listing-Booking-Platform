@@ -281,7 +281,7 @@ export default function PropertyDetails() {
             Estately
           </h1>
           <button
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/home")}
             className="text-sm font-medium text-slate-300 hover:text-teal-400"
           >
             &larr; Back to Listings

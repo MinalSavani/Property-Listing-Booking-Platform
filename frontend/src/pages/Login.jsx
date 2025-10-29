@@ -63,7 +63,7 @@ export default function Login() {
             setTimeout(() => {
                 if (role === "host") navigate("/host/dashboard");
                 else if (role === "admin") navigate("/admin/dashboard");
-                else navigate("/");
+                else navigate("/home");
             }, 1200);
 
         } catch (err) {
