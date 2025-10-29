@@ -15,7 +15,7 @@ import { Toaster, toast } from "react-hot-toast";
 
 // --- Axios Instance with Interceptor ---
 const API = axios.create({
-    baseURL: "https://property-listing-booking-platform.onrender.com/api",
+    baseURL:  import.meta.env.VITE_API_URL,
 });
 
 API.interceptors.request.use(

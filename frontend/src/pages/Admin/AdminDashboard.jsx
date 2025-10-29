@@ -109,7 +109,7 @@
 
 // // --- Axios Instance with Interceptor ---
 // const API = axios.create({
-//     baseURL: "https://property-listing-booking-platform.onrender.com/api",
+//     baseURL:  import.meta.env.VITE_API_URL,
 // });
 
 // API.interceptors.request.use(
@@ -265,7 +265,7 @@
 
 // // --- Axios Instance with Interceptors ---
 // const API = axios.create({
-//   baseURL: "https://property-listing-booking-platform.onrender.com/api",
+//   baseURL:  import.meta.env.VITE_API_URL,
 // });
 
 // // ✅ Add token automatically in every request
@@ -540,7 +540,7 @@ import { useAuth } from "../../context/AuthContext"; // ✅ Use the global auth 
 
 // --- Axios Instance with Interceptors ---
 const API = axios.create({
-  baseURL: "https://property-listing-booking-platform.onrender.com/api",
+  baseURL:  import.meta.env.VITE_API_URL,
 });
 
 // ✅ Attach token automatically to requests

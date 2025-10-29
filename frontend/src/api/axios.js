@@ -2,10 +2,10 @@
 import axios from "axios";
 
 // const API = axios.create({
-//   baseURL: "https://property-listing-booking-platform.onrender.com/api", // your backend
+//   baseURL:  import.meta.env.VITE_API_URL, // your backend
 // });
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL, // ✅ this now points to your Render backend
+  baseURL: import.meta.env.VITE_API_URL,// ✅ this now points to your Render backend
   withCredentials: true,
 });
 

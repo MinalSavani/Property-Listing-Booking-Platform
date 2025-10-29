@@ -6,7 +6,7 @@
 
 // // --- Axios Instance with Interceptor ---
 // const API = axios.create({
-//     baseURL: "https://property-listing-booking-platform.onrender.com/api",
+//     baseURL:  import.meta.env.VITE_API_URL,
 // });
 
 // API.interceptors.request.use(
@@ -241,7 +241,7 @@ import { Search, Plus, LogOut, BarChart } from "lucide-react";
 
 // --- Axios Instance with Interceptor ---
 const API = axios.create({
-    baseURL: "https://property-listing-booking-platform.onrender.com/api",
+    baseURL:  import.meta.env.VITE_API_URL,
 });
 
 API.interceptors.request.use(

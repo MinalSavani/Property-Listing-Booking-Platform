@@ -6,7 +6,7 @@
 
 // // Create an Axios instance with a base URL
 // const API = axios.create({
-//     baseURL: "https://property-listing-booking-platform.onrender.com/api",
+//     baseURL:  import.meta.env.VITE_API_URL,
 // });
 
 // // Add a request interceptor to include the token in headers
@@ -168,7 +168,7 @@ import { Toaster, toast } from "react-hot-toast";
 import { useState } from "react";
 // Create an Axios instance with base URL
 const API = axios.create({
-  baseURL: "https://property-listing-booking-platform.onrender.com/api",
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 API.interceptors.request.use(

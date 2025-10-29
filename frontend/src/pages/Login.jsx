@@ -6,9 +6,9 @@ import { Toaster, toast } from "react-hot-toast";
 
 // Create an Axios instance with a base URL
 const API = axios.create({
-    baseURL: "https://property-listing-booking-platform.onrender.com/api",
+  baseURL: import.meta.env.VITE_API_URL,// ✅ this now points to your Render backend
+  withCredentials: true,
 });
-
 
 // Add a request interceptor to include the token in headers
 API.interceptors.request.use(
